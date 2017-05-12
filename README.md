@@ -45,5 +45,5 @@ Game.Map.Cave = function(tiles, player) {
 };
 Game.Map.Cave.extend(Game.Map);
 ```
-The map above is the cavern level in the game, it is a good map to edit for custom maps!
+The map above is the cave level in the game, it is a good map to edit for custom maps!
 ## story
