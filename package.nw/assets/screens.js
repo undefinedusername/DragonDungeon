@@ -1,6 +1,14 @@
 Game.Screen = {};
 mhelp=0;
 typelvl={width:100,height:48};
+Game.custom.maps = {
+maps : function(){
+console.log("Maps: cavern.js,cave.js");
+},
+loadmap : function(map){
+	
+}
+}
 // Define our initial start screen
 Game.Screen.startScreen = {
     enter: function() {    console.log("Entered start screen."); },
@@ -13,7 +21,8 @@ Game.Screen.startScreen = {
          display.drawText(1,3,"%c{green}Made by Noah Enger!");
         display.drawText(1,6, "Press [Enter] to start Default Dungeon!");
          display.drawText(1,7,"Press [I] to show information about this Game!");
-		 display.drawText(1,8,"Press [?] ingame to show the controls and backstory!")
+	    display.drawText(1,9,"Press [M] to load a custom map!")
+	display.drawText(1,8,"Press [?] ingame to show the controls and backstory!")
          display.drawText(1,14,"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
     },
     handleInput: function(inputType, inputData) {
@@ -27,11 +36,9 @@ Game.Screen.startScreen = {
                  // When I is pressed it will go to the information screen showing the version, build number, authors, etc
 				 Game.switchScreen(Game.Screen.informationScreen);
                
-			}else if(inputData.keyCode === ROT.VK_E){
-               
-                
-				 Mod.healthmod = 9000;
-               
+			}else if(inputData.keyCode === ROT.VK_M){
+               		Game.custom.maps.loadmap("custom.js);
+               // Loads the map "custom.js" in the maps directory ---- TODO!
 			}
     }
 }
