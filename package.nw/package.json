@@ -1,0 +1,52 @@
+{
+    "nodejs": true,
+    "webkit": {
+        "double_tap_to_zoom_enabled": false,
+        "plugin": true
+    },
+    "window": {
+        "icon": "assets/images/icon.png",
+        "id": "DOSdungeon",
+        "visible_on_all_workspaces": false,
+        "show_in_taskbar": true,
+        "frame": true,
+        "as_desktop": true,
+        "height": 100,
+        "resizable": true,
+        "visible": true,
+        "mac_icon": "assets/images/icon.png",
+        "kiosk": true,
+        "width": 100,
+        "always_on_top": false,
+        "kiosk_emulation": false,
+        "show": true,
+        "title": "DOSdungeon",
+        "exe_icon": "assets/images/icon.png",
+        "transparent": false,
+        "fullscreen": false
+    },
+    "description": "DOS Styled dungeon crawler",
+    "node-main": "onStart.js",
+    "node-remote": [],
+    "name": "DOSdungeon",
+    "additional_trust_anchors": [],
+    "webexe_settings": {
+        "force_download": false,
+        "download_dir": "C:/",
+        "mac-x64": false,
+        "export_dir": "output",
+        "nw_version": "0.20.0-rc1",
+        "windows-x32": true,
+        "linux-x64": false,
+        "custom_script": "",
+        "linux-x32": false,
+        "windows-x64": false,
+        "nw_compression_level": 0,
+        "sdk_build": false,
+        "uncompressed_folder": true,
+        "output_pattern": ""
+    },
+    "version": "0.1.0",
+    "main": "index.html",
+    "app_name": "DOSdungeon"
+}
