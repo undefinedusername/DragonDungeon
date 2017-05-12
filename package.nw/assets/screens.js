@@ -37,7 +37,7 @@ Game.Screen.startScreen = {
 				 Game.switchScreen(Game.Screen.informationScreen);
                
 			}else if(inputData.keyCode === ROT.VK_M){
-               		Game.custom.maps.loadmap("custom.js);
+               		Game.custom.maps.loadmap("custom.js");
                // Loads the map "custom.js" in the maps directory ---- TODO!
 			}
     }
